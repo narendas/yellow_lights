@@ -11,7 +11,7 @@ def index(request):
 def headline(request):
     ist=datetime.now()
     date1=ist.strftime("%d-%m-%Y")
-    if date1=="29-12-2020":
+    if date1=="31-12-2020":
         return render(request,'cudie_detection/index.html',{'insert_me':'It is your Birthday'})
     else:
         return render(request,'cudie_detection/index.html',{'insert_me':'Are you my cudie?'})
